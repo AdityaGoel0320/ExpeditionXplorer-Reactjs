@@ -1,0 +1,96 @@
+.NavbarLogo2 {
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.red {
+    color: #01959a;
+}
+
+.footer {
+    padding: 6rem 6rem;
+    background-color: #111;
+    color: white;
+}
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upper-left p {
+    font-size: 1.1rem;
+    cursor: default;
+}
+
+.upper-right {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.upper-right i {
+    font-size: 2rem;
+    transition: 0.15s ease;
+    cursor: pointer;
+}
+
+.upper-right i:hover {
+    color: #01959a;
+}
+
+.lower {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.grp {
+    cursor: pointer;
+    margin: 2rem 0;
+}
+
+.lower .grp h4 {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.lower .grp p {
+    font-size: 1.25rem;
+    margin: -0.75rem 0;
+}
+
+.links_logo {
+    color: white;
+}
+
+@media screen and (max-width:950px) {
+    .upper-right {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .lower {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .upper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .upper-right {
+        margin-top: 4rem;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+}

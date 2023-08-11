@@ -1,0 +1,92 @@
+.destinations{
+    margin: 4rem 6rem;
+    text-align: center;
+}
+.destinations h1{
+    font-size: 3rem;
+}
+.first-des , .second-des{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+}
+.des-text{
+    width: 45%;
+    text-align: start;
+    font-size: 1.1rem;
+}
+h2{
+    padding-bottom: 1rem;
+}
+.image , .image2{
+    position: relative;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    z-index: -99;
+}
+.image img , .image2 img{
+    width: 49%;
+    height: 400px;
+    object-fit:fill;
+    border-radius: 6px;
+    box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.2);
+}
+.image img:nth-child(2){
+    position: absolute;
+    top: -10%;
+    right: 0;
+}
+.image2 img:nth-child(1){
+    position: absolute;
+    top: 10%;
+    right: 0;
+}
+/* 
+img {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 6px,
+    inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    inset rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: all ease-in-out 0.3s;
+  overflow: hidden;
+} */
+
+.z:hover {
+  box-shadow: rgba(193, 44, 223, 0.19) 0px 10px 20px,
+    rgba(193, 44, 223, 0.23) 0px 6px 6px,
+    inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    inset rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border: 5px solid #b671d6;
+}
+
+
+@media screen and (max-width:850px) {
+    .destinations{
+        margin: 4rem 2rem;
+    }
+    .first-des{
+        flex-direction: column-reverse;
+        margin-top: 5rem;
+    }
+    .second-des{
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+    .des-text{
+        width: 95%;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    .image ,.image2{
+        width: 95%;
+        margin: 2rem 0;
+        height: 400px;
+    }
+    .image img , .image2 img{
+        height: 350px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
