@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import Hero from '../../components/Hero/Hero'
-import HeroImg from '../../assets/2.jpeg'
+import HeroImg from '../../assets/R.jpg'
 import Destination from '../../components/Destinations/Destination'
 import Trip from '../../components/Trip/Trip'
 import Footer from '../../components/Footer/Footer'
@@ -13,6 +13,7 @@ const Home = () => {
       <Navbar />
       <Hero
         cName="hero"
+        
         heroImg={HeroImg}
         title="New Journey , New Story"
         text="Choose Your Favourite Destination"
